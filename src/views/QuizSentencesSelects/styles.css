@@ -1,0 +1,61 @@
+.selects-container * {
+  width: min-content;
+  height: min-content;
+}
+.selects {
+  width: min-content;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px var(--color-4) solid;
+  border-radius: 0px;
+  box-shadow: none;
+  outline: none;
+  display: inline-block;
+  height: 22px;
+  padding: 0px;
+  font-weight: bold;
+  background-color: none;
+  background: none;
+  border-bottom: 1px solid black;
+}
+.selects:focus {
+  background-color: none;
+  background: none;
+  border-bottom: 1px solid black;
+}
+.selects:disabled {
+  background-color: transparent;
+}
+option:first-child {
+  color: rgb(190, 190, 190);
+}
+option {
+  color: black;
+  font-weight: bold;
+}
+.❌ {
+  border-bottom: 1px var(--bs-red) solid;
+}
+.✅ {
+  border-bottom: 1px var(--color-2) solid;
+}
+.form-control:focus {
+  /* color: var(--bs-body-color); */
+  background-color: none;
+  border-color: var(--color-6);
+  border-width: 3px;
+  outline: 0;
+  box-shadow: none;
+}
+.form-control:hover {
+  cursor: pointer;
+}
+
+#sentences,
+.selects-container {
+  flex-wrap: wrap;
+}
+.container .wrapper {
+  width: max-content;
+}
