@@ -1,4 +1,31 @@
-/* scope to component */
-.hb {
-  color: red;
+.hb .container .wrapper {
+  width: max-content;
+}
+.temp-wrapper {
+  /* position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(0%, -50%); */
+
+  z-index: 10;
+}
+.temporizador {
+  background-color: rgb(2, 2, 2);
+  color: white;
+  border: 3px solid black;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  z-index: 10;
+  /* position: relative; */
+  width: 82px;
+  height: 30px;
+  font-size: 18px;
+}
+
+#canvas {
+  border: 1px solid gray;
+  /* width: max-content; */
 }
