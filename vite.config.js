@@ -6,6 +6,7 @@ import dynamicImport from 'vite-plugin-dynamic-import';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
 export default defineConfig({
+	base: '/componentes_altheasys/', // ⛔ githubpages
 	root: __dirname,
 	plugins: [
 		dynamicImport(),
