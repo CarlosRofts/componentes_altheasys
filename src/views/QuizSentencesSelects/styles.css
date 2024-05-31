@@ -1,6 +1,7 @@
 .selects-container * {
   width: min-content;
   height: min-content;
+  font-size: 18px;
 }
 .selects {
   width: min-content;
@@ -12,12 +13,14 @@
   box-shadow: none;
   outline: none;
   display: inline-block;
-  height: 22px;
   padding: 0px;
   font-weight: bold;
   background-color: none;
   background: none;
   border-bottom: 1px solid black;
+
+  font-size: 18px;
+  height: 25px;
 }
 .selects:focus {
   background-color: none;
