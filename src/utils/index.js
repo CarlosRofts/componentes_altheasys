@@ -48,3 +48,6 @@ export function shuffleArray(array) {
  * @returns la matriz `cleantxt`.
  * ⚡⚡⚡ ejemplo de uso : makeTextArray({ imagen_arr, split: '<br>' });
  */
+export function isMobile() {
+	return window.matchMedia('(max-width: 991px)').matches;
+}
