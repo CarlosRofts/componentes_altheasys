@@ -1,0 +1,90 @@
+/* mobile */
+.svg-icon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+.menu__item {
+  height: 50px;
+  width: 50px;
+}
+.menu__burger {
+  filter: url(#gooeyness);
+}
+.menu__close {
+  transform: scale(0);
+  transition: transform 400ms;
+}
+.menu__line {
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms,
+    transform 500ms 200ms;
+}
+.menu__close .menu__line {
+  stroke-width: 5.5px;
+}
+.menu__item--active .menu__line {
+  stroke: white;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+}
+.menu__item--active .menu__close {
+  transform: scale(1);
+  transition: transform 400ms 350ms;
+}
+
+/* x state */
+.menu__item--second .menu__line--1 {
+  stroke-dasharray: 21 185.62753295898438;
+  transition-delay: 0;
+}
+.menu__item--second .menu__line--2 {
+  stroke-dasharray: 21 178.6514129638672;
+  transition-delay: 30ms;
+}
+.menu__item--second .menu__line--3 {
+  stroke-dasharray: 21 197.92425537109375;
+  transition-delay: 60ms;
+}
+.menu__item--second .menu__line--4 {
+  stroke-dasharray: 21 178.71067810058594;
+  transition-delay: 90ms;
+}
+.menu__item--second .menu__line--5 {
+  stroke-dasharray: 21 185.62753295898438;
+  transition-delay: 120ms;
+}
+.menu__item--second .menu__line--6 {
+  stroke-dasharray: 21 197.92425537109375;
+  transition-delay: 150ms;
+}
+
+/* hamburgers state */
+.menu__item--active.menu__item--second .menu__line--1 {
+  stroke-dasharray: 1 185.62753295898438;
+  stroke-dashoffset: -50px;
+}
+.menu__item--active.menu__item--second .menu__line--2 {
+  stroke-dasharray: 1 178.6514129638672;
+  stroke-dashoffset: -50px;
+}
+.menu__item--active.menu__item--second .menu__line--3 {
+  stroke-dasharray: 1 197.92425537109375;
+  stroke-dashoffset: -50px;
+}
+.menu__item--active.menu__item--second .menu__line--4 {
+  stroke-dasharray: 1 178.71067810058594;
+  stroke-dashoffset: -50px;
+}
+.menu__item--active.menu__item--second .menu__line--5 {
+  stroke-dasharray: 1 185.62753295898438;
+  stroke-dashoffset: -50px;
+}
+.menu__item--active.menu__item--second .menu__line--6 {
+  stroke-dasharray: 1 197.92425537109375;
+  stroke-dashoffset: -50px;
+}
