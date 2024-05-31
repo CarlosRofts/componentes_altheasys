@@ -42,7 +42,6 @@ export default function initQuiz(state) {
 			if (state.contInt === 0) state.completado = true;
 			state.puntajeObt = state.puntos[state.contInt];
 
-			// if (retrosBien) modbien.retrotexto = retrosBien[state.contInt];
 			swal({
 				title: '¡Respuesta Correcta!',
 				text: '¡Felicitaciones! Has respondido correctamente la pregunta.',
@@ -68,12 +67,7 @@ export default function initQuiz(state) {
 					showCorrects();
 					showFeedback();
 				});
-				// if (window.mostrarPop)
-				// 	window.mostrarPop(modmal, () => {
-				// 		console.log('modmal on Close');
-				// 		showCorrects();
-				// 		showFeedback();
-				// 	});
+
 				finalizar(); // guardar data y finalizar
 			} else {
 				if (window.mostrarPop) window.mostrarPop(modmal);
