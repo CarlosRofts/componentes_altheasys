@@ -1,0 +1,144 @@
+
+#slider-container {
+  width: 80%;
+  margin: 0px auto;
+  position: relative;
+}
+
+#slider {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#slider img {
+  width: 100%;
+  height: auto;
+  display: none;
+  z-index: 1;
+}
+
+#slider img:not(img:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#controls {
+  margin-top: 20px;
+}
+
+.range-wrapper {
+  position: relative;
+  background-color: #2a2a2a;
+  margin: 0 auto;
+  padding: 5px 10px 0px 10px;
+}
+
+/* Estilo para el input range */
+input[type='range'] {
+  width: 100%; /* Ancho completo del contenedor */
+  -webkit-appearance: none; /* Quita el estilo predeterminado del navegador */
+  margin: 10px 0; /* Margen superior e inferior */
+}
+
+/* Estilo al enfocar el rango */
+input[type='range']:focus {
+  outline: none; /* Quita el contorno al enfocar */
+}
+
+/* Estilo del track del rango para navegadores webkit */
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%; /* Ancho completo */
+  height: 8px; /* Altura del track */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  animate: 0.2s; /* Animación */
+  box-shadow: 1px 1px 1px #000000; /* Sombra */
+  background: #000000; /* Color de fondo */
+  border-radius: 1.3px; /* Radio de borde */
+  border: 0.2px solid #010101; /* Borde */
+}
+
+/* Estilo del thumb (punto deslizante) para navegadores webkit */
+input[type='range']::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000; /* Sombra */
+  border: 1px solid #000000; /* Borde */
+  height: 20px; /* Altura */
+  width: 20px; /* Ancho */
+  border-radius: 5px; /* Radio de borde */
+  background: #ffffff; /* Color de fondo */
+  cursor: pointer; /* Cambia el cursor */
+  -webkit-appearance: none; /* Quita el estilo predeterminado */
+  margin-top: -7px; /* Ajusta la posición vertical */
+}
+
+/* Estilo del track del rango para navegadores Firefox */
+input[type='range']::-moz-range-track {
+  /* Estilos similares a los de navegadores webkit */
+}
+
+/* Estilo del thumb (punto deslizante) para navegadores Firefox */
+input[type='range']::-moz-range-thumb {
+  /* Estilos similares a los de navegadores webkit */
+}
+
+/* Estilo del track del rango para navegadores IE/Edge */
+input[type='range']::-ms-track {
+  /* Estilos similares a los de navegadores webkit */
+}
+
+/* Estilo de la parte inferior del track para navegadores IE/Edge */
+input[type='range']::-ms-fill-lower {
+  /* Estilos similares a los de navegadores webkit */
+}
+
+/* Estilo de la parte superior del track para navegadores IE/Edge */
+input[type='range']::-ms-fill-upper {
+  /* Estilos similares a los de navegadores webkit */
+}
+
+/* Estilo del thumb (punto deslizante) para navegadores IE/Edge */
+input[type='range']::-ms-thumb {
+  /* Estilos similares a los de navegadores webkit */
+}
+
+/* Estilo al enfocar la parte inferior del track para navegadores IE/Edge */
+input[type='range']:focus::-ms-fill-lower {
+  /* Estilos similares a los de navegadores webkit */
+}
+
+/* Estilo al enfocar la parte superior del track para navegadores IE/Edge */
+input[type='range']:focus::-ms-fill-upper {
+  /* Estilos similares a los de navegadores webkit */
+}
+
+/*  */
+
+#slider img {
+  transition: opacity 0.3s ease;
+}
+
+/*  */
+/* Estilo para los círculos indicadores */
+#indicators {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  margin: auto;
+}
+
+#indicators span {
+  position: absolute;
+  top: 0;
+  width: 10px; /* Diámetro del círculo */
+  height: 10px; /* Diámetro del círculo */
+  background-color: #d8d8d8; /* Color del círculo */
+  border-radius: 50%; /* Para hacer un círculo */
+  transform: translateX(-50%);
+  /* margin-left: 5px; */
+}
+
+#indicators span.active {
+  background-color: #ff00008f; /* Color del círculo activo */
+}
