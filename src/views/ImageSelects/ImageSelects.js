@@ -30,7 +30,7 @@ export function render({ settings, imagen_arr, validarBtn }) {
 	imagen_arr.forEach((img, i) => {
 		container.innerHTML += `
         <div class="col">
-            <img src="/${img}" alt="" class="image" />
+            <img src="${img}" alt="" class="image" />
             ${select(i)}
         </div>
         `;

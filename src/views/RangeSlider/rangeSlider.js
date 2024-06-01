@@ -26,7 +26,7 @@ export class RangeSlider {
 	renderImages() {
 		this.images.forEach((imgSrc, index) => {
 			const img = document.createElement('img');
-			img.src = '/' + imgSrc;
+			img.src = imgSrc;
 			this.slider.appendChild(img);
 			if (index === 0) img.style.display = 'block';
 		});

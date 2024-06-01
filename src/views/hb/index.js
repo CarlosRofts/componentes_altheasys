@@ -26,7 +26,7 @@ const state = {
 function initGame() {
 	// var audio = new Audio('../audios/retros/ding.mp3');
 	let image = new Image();
-	image.src = '/img1.png';
+	image.src = 'img1.png';
 	// no funciona la lib, error de painters en vite
 	image.onload = () => {
 		const canvas = document.querySelector('#canvas');
