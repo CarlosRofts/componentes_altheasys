@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'EireneSans-Bold';
+  src: url('/fonts/EireneSans-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'EireneSans-Regular';
+  src: url('/fonts/EireneSans-Regular.otf') format('truetype');
+}
+
+/*  */
+@font-face {
+  font-family: 'Trap-Black.otf';
+  src: url('/fonts/Trap-Black.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Trap-Bold.otf';
+  src: url('/fonts/Trap-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Trap-ExtraBold.otf';
+  src: url('/fonts/Trap-ExtraBold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Trap-Light.otf';
+  src: url('/fonts/Trap-Light.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Trap-Medium.otf';
+  src: url('/fonts/Trap-Medium.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Trap-Regular.otf';
+  src: url('/fonts/Trap-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Trap-SemiBold.otf';
+  src: url('/fonts/Trap-SemiBold.otf') format('truetype');
+}
+/*  */
+@font-face {
+  font-family: 'SpaceGrotesk-Bold.otf';
+  src: url('/fonts/SpaceGrotesk-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'SpaceGrotesk-Light.otf';
+  src: url('/fonts/SpaceGrotesk-Light.otf') format('truetype');
+}
+@font-face {
+  font-family: 'SpaceGrotesk-Medium.otf';
+  src: url('/fonts/SpaceGrotesk-Medium.otf') format('truetype');
+}
+@font-face {
+  font-family: 'SpaceGrotesk-Regular.otf';
+  src: url('/fonts/SpaceGrotesk-Regular.otf') format('truetype');
+}
