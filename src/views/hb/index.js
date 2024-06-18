@@ -101,6 +101,12 @@ function initGame() {
 			console.log('complete');
 			state.complete = true;
 			console.log('modbien');
+			swal({
+				title: '¡Respuesta Correcta!',
+				text: '¡Felicitaciones! Has respondido correctamente la pregunta.',
+				icon: 'success',
+				button: 'Continuar',
+			});
 			// complete()
 		});
 		hb.onConnect(() => {
