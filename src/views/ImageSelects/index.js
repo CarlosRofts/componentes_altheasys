@@ -11,30 +11,14 @@ export const html = view;
 export const styles = css + selects;
 
 let state = {
-	imagen_arr: ['img1.png', 'img2.png', 'img1.png'],
+	imagen_arr: ['grafica_col.jpg', 'gráficos_de_líneas.jpg', 'grafica_circular.jpg'],
 	intentosCount: 0,
 	completado: false,
 	validarBtn: null,
-	modbien: {
-		html: 'modalbien.html',
-		retrotitulo: 'Modal BIEN Titulo lorem ipsum 🌟',
-		retrotexto: 'texto lorem ipsum',
-		urlImg: 'default.png',
-		audio: 'bien.mp3',
-		size: 'md',
-	},
-	modmal: {
-		html: 'modalmal.html',
-		retrotitulo: 'Modal MAL Titulo lorem ipsum 🌟',
-		retrotexto: 'texto lorem ipsum',
-		urlImg: 'default.png',
-		audio: 'bien.mp3',
-		size: 'md',
-	},
 	settings: {
 		puntaje_fallo: 0,
 		puntaje: 10,
-		corrects_options: ['lorem', 'ipsum', 'dolor'],
+		corrects_options: ['Gráficos de columnas', 'Gráficos de líneas', 'Gráficos circulares'],
 		intentos: 2,
 	},
 };

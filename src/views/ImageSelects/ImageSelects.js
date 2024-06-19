@@ -1,19 +1,11 @@
 import { shuffleArray } from '../../utils';
 import { initSelects } from '../../libs/select';
+import swal from 'sweetalert';
 
 export function render({ settings, imagen_arr, validarBtn }) {
 	// build
 	const placeholder = 'Selecciona';
 	const select = (i) => {
-		// const selectRadio = (ind) => {
-		// 	let rad = '';
-		// 	if (ind === imagen_arr.length - 1) {
-		// 		rad = `<div className="lastoption"></div>`;
-		// 		debugger;
-		// 	}
-		// 	return rad;
-		// };
-
 		const sel = `
 		<div class="form-group m-0 p-0 select-container custom-select" i="${i}">
 			<select class="selects form-control mx-1" name="select" data-name="${i}">
@@ -30,7 +22,7 @@ export function render({ settings, imagen_arr, validarBtn }) {
 	imagen_arr.forEach((img, i) => {
 		container.innerHTML += `
         <div class="col">
-            <img src="${img}" alt="" class="image" />
+            <img src="${img}" alt="" class="image mb-2" />
             ${select(i)}
         </div>
         `;
