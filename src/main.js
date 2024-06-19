@@ -38,6 +38,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	}
 
 	setView('hb');
+	document.querySelector('body').style.opacity = 1;
 
 	// click handler
 	[...document.querySelectorAll('.link-view')].map((el) => {
