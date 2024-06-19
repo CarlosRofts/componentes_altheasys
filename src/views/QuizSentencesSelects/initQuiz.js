@@ -53,8 +53,6 @@ export default function initQuiz(state) {
 
 			return;
 		} else {
-			// if (retrosMal) modmal.retrotexto = retrosMal[state.contInt];
-
 			state.contInt++;
 			if (state.totalInt === state.contInt) {
 				swal({
@@ -63,7 +61,6 @@ export default function initQuiz(state) {
 					icon: 'error',
 					button: 'Continuar',
 				}).then((value) => {
-					// swal(`The returned value is: ${value}`);
 					showCorrects();
 					showFeedback();
 				});
