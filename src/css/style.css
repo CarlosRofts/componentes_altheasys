@@ -48,7 +48,7 @@ body {
   word-spacing: 0.8px;
 
   font-size: 22px;
-  min-width: 280px;
+  /* min-width: 280px; */
   color: var(--color-secondary-opacity50);
 }
 
@@ -114,7 +114,7 @@ body {
   /* links */
   .link-view {
     text-align: left;
-    min-width: 250px;
+    min-width: 100%;
     font-weight: bold;
     cursor: pointer;
   }
