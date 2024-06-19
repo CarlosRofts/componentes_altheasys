@@ -1,3 +1,6 @@
+import './css/colors.css';
+import './css/buttons.css';
+import './css/fonts.css';
 import './css/hamburguer.css';
 import './css/style.css';
 import { removeExistingScripts, insertScripts } from './utils';
@@ -18,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	// view importing handler
 	async function setView(id) {
 		const { html, init, styles, scripts } = await import(`/root/src/views/${id}`);
-		if (styles) document.querySelector('.view').innerHTML = `<style>${styles}</style>`;
+		if (styles) document.querySelector('#view').innerHTML = `<style>${styles}</style>`;
 
 		// script es un array, iterar y asignar los script a head, debemos guardar los scripts por que los vamos a borrar
 
@@ -30,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			state.scripts = [];
 		}
 
-		if (html) document.querySelector('.view').innerHTML += html;
+		if (html) document.querySelector('#view').innerHTML += html;
 		if (init) init();
 	}
 
