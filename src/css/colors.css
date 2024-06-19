@@ -3,4 +3,9 @@
   --color-primary: #0e1520;
   --color-secondary: #ddd5c7;
   --color-secondary-opacity50: #ddd5c785;
+
+  --button-primary-bg: hsl(289, 19%, 28%);
+  --button-primary-bg-hover: hsl(242, 18%, 39%);
+  --button-primary-bg-disabled: #212121;
+  --button-primary-bg-border: #ffff;
 }
