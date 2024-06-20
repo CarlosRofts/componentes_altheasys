@@ -11,7 +11,7 @@ export const html = view;
 export const styles = css + selects;
 
 let state = {
-	imagen_arr: ['grafica_col.jpg', 'gráficos_de_líneas.jpg', 'grafica_circular.jpg'],
+	imagen_arr: ['grafica_col.png', 'gráficos_de_líneas.png', 'grafica_circular.png'],
 	intentosCount: 0,
 	completado: false,
 	validarBtn: null,
