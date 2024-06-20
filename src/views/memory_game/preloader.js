@@ -4,15 +4,16 @@ export default class Preloader extends Phaser.Scene {
 	constructor(state) {
 		super('preloader');
 		this.state = state;
+		this.baseUrl = import.meta.env.BASE_URL;
 	}
 
 	preload() {
 		// characters sprites
-		this.load.spritesheet('char1', '/textures/char1_64.png', { frameWidth: 64, frameHeight: 64 });
-		this.load.spritesheet('char2', '/textures/char2_64.png', { frameWidth: 64, frameHeight: 64 });
+		this.load.spritesheet('char1', this.baseUrl + '/textures/char1_64.png', { frameWidth: 64, frameHeight: 64 });
+		this.load.spritesheet('char2', this.baseUrl + '/textures/char2_64.png', { frameWidth: 64, frameHeight: 64 });
 
 		// assets
-		this.load.spritesheet('box', '/textures/box.png', { frameWidth: 64, frameHeight: 64 });
+		this.load.spritesheet('box', this.baseUrl + '/textures/box.png', { frameWidth: 64, frameHeight: 64 });
 
 		// memo cards
 		this.state.imagen_arr.forEach((url, i) => {
@@ -21,9 +22,9 @@ export default class Preloader extends Phaser.Scene {
 		});
 
 		// backgrounds
-		this.load.image('Grass', '/textures/bg_tiled/Grass.png');
-		this.load.image('tileset', '/textures/bg_tiled/tileset.png');
-		this.load.tilemapTiledJSON('memo_tilemap', '/textures/bg_tiled/bg_memo.tmj');
+		this.load.image('Grass', this.baseUrl + '/textures/bg_tiled/Grass.png');
+		this.load.image('tileset', this.baseUrl + '/textures/bg_tiled/tileset.png');
+		this.load.tilemapTiledJSON('memo_tilemap', this.baseUrl + '/textures/bg_tiled/bg_memo.tmj');
 
 		// Validación de carga de recursos
 		this.load.on('complete', () => {
