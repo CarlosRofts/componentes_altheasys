@@ -49,7 +49,7 @@ export default class Game extends Phaser.Scene {
 		});
 
 		this.player = this.physics.add
-			.sprite(width * 0.5, height * 0.6, 'char1')
+			.sprite(width * 0.5, height * 0.8, 'char1')
 			.setSize(40, 40)
 			.setOffset(12, 38)
 			.play('down-idle');
