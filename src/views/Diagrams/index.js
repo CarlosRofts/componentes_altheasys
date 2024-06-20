@@ -37,7 +37,7 @@ export function init() {
 			onUpdate: (self) => {
 				console.log('progress:', self.progress.toFixed(3), 'direction:', self.direction, 'velocity', self.getVelocity());
 			},
-			markers: true,
+			// markers: true,
 			// scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the
 		});
 	});
