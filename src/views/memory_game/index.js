@@ -23,22 +23,6 @@ const state = {
 	intentos: 2,
 	intentosCount: 0,
 	puntaje: [10, 5],
-	modbien: {
-		html: 'modalbien.html',
-		retrotitulo: 'Modal BIEN Titulo lorem ipsum 🌟',
-		retrotexto: 'texto lorem ipsum',
-		urlImg: 'default.png',
-		audio: 'bien.mp3',
-		size: 'md',
-	},
-	modmal: {
-		html: 'modalmal.html',
-		retrotitulo: 'Modal MAL Titulo lorem ipsum 🌟',
-		retrotexto: 'texto lorem ipsum',
-		urlImg: 'default.png',
-		audio: 'bien.mp3',
-		size: 'md',
-	},
 	navbar_mt: 70,
 	tiempo: 2,
 };
